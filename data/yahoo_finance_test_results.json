@@ -1,0 +1,230 @@
+{
+  "timestamp": "2025-05-24T17:15:21.485385",
+  "yahoo_finance_api": {
+    "AAPL": {
+      "basic_info": {
+        "symbol": "AAPL",
+        "market_cap": 2916513742848.0,
+        "pe_ratio": 30.415888,
+        "forward_pe": 23.498194,
+        "dividend_yield": 0.0053,
+        "beta": 1.275,
+        "fifty_two_week": {
+          "low": 169.21,
+          "high": 260.1
+        },
+        "moving_averages": {
+          "fifty_day": 206.48,
+          "two_hundred_day": 225.9317
+        },
+        "volume": {
+          "current": 77631468,
+          "average": 61649631
+        }
+      },
+      "status": "success"
+    },
+    "TSLA": {
+      "basic_info": {
+        "symbol": "TSLA",
+        "market_cap": 1093000560640.0,
+        "pe_ratio": 192.80682,
+        "forward_pe": 104.734566,
+        "dividend_yield": 0.0,
+        "beta": 2.434,
+        "fifty_two_week": {
+          "low": 167.41,
+          "high": 488.54
+        },
+        "moving_averages": {
+          "fifty_day": 276.903,
+          "two_hundred_day": 299.20654
+        },
+        "volume": {
+          "current": 84011168,
+          "average": 125409385
+        }
+      },
+      "status": "success",
+      "financial_data": {
+        "symbol": "TSLA",
+        "price": {
+          "current": 339.34,
+          "target": {
+            "low": 115.0,
+            "high": 500.0,
+            "mean": 299.37952,
+            "median": 301.5
+          }
+        },
+        "recommendation": {
+          "mean": 2.58333,
+          "key": "hold",
+          "analysts_count": 42
+        },
+        "financial_metrics": {
+          "total_cash": 36996001792.0,
+          "cash_per_share": 11.486,
+          "total_debt": 13127999488.0,
+          "debt_to_equity": 17.407,
+          "current_ratio": 1.996,
+          "quick_ratio": 1.376
+        },
+        "profitability": {
+          "gross_margin": 0.17662,
+          "operating_margin": 0.0255,
+          "profit_margin": 0.063829996,
+          "ebitda_margin": 0.13111
+        },
+        "growth": {
+          "revenue_growth": -0.092,
+          "earnings_growth": -0.707
+        },
+        "returns": {
+          "return_on_assets": 0.03724,
+          "return_on_equity": 0.087740004
+        },
+        "cash_flow": {
+          "operating": 16837000192.0,
+          "free": 3360000000.0
+        },
+        "currency": "USD"
+      },
+      "historical_data": {
+        "total_days": 23,
+        "latest_price": 339.3399963378906,
+        "price_range": {
+          "min": 244.42999267578125,
+          "max": 354.989990234375
+        }
+      },
+      "insights": {
+        "symbol": "TSLA",
+        "technical_analysis": {
+          "short_term": {
+            "direction": "Bullish",
+            "score": 2,
+            "description": "Bullish events outweigh bearish events."
+          },
+          "support": 259.88,
+          "resistance": 342.03,
+          "stop_loss": 290.400613,
+          "provider": "Trading Central"
+        },
+        "valuation": {
+          "description": "Overvalued",
+          "discount": "-0%",
+          "relative_value": "Premium",
+          "provider": "Trading Central"
+        },
+        "company_snapshot": {
+          "innovativeness": 0.9412,
+          "sustainability": 0.7193,
+          "insider_sentiments": 0.0467,
+          "earningsReports": 0.9878,
+          "dividends": 0.0
+        },
+        "recommendation": {
+          "target_price": 410.0,
+          "rating": "BUY",
+          "provider": "Argus Research"
+        }
+      },
+      "news": {
+        "count": 5,
+        "latest_headlines": [
+          "Big Tech's spending drove Nvidia's rise",
+          "Tesla price target, Booz Allen layoffs: Trending Tickers",
+          "From Tesla to forests: what Nest does with 13m UK savers’ pension cash"
+        ]
+      }
+    },
+    "MSFT": {
+      "basic_info": {
+        "symbol": "MSFT",
+        "market_cap": 3345980850176.0,
+        "pe_ratio": 34.84365,
+        "forward_pe": 30.112375,
+        "dividend_yield": 0.0074,
+        "beta": 0.985,
+        "fifty_two_week": {
+          "low": 344.79,
+          "high": 468.35
+        },
+        "moving_averages": {
+          "fifty_day": 403.3268,
+          "two_hundred_day": 415.89856
+        },
+        "volume": {
+          "current": 16811866,
+          "average": 24569249
+        }
+      },
+      "status": "success"
+    },
+    "GOOGL": {
+      "basic_info": {
+        "symbol": "GOOGL",
+        "market_cap": 2050448293888.0,
+        "pe_ratio": 18.802456,
+        "forward_pe": 18.802456,
+        "dividend_yield": 0.005,
+        "beta": 1.01,
+        "fifty_two_week": {
+          "low": 140.53,
+          "high": 207.05
+        },
+        "moving_averages": {
+          "fifty_day": 159.2894,
+          "two_hundred_day": 170.9784
+        },
+        "volume": {
+          "current": 35145418,
+          "average": 40125176
+        }
+      },
+      "status": "success"
+    },
+    "AMZN": {
+      "basic_info": {
+        "symbol": "AMZN",
+        "market_cap": 2133790294016.0,
+        "pe_ratio": 32.78793,
+        "forward_pe": 32.6813,
+        "dividend_yield": 0.0,
+        "beta": 1.308,
+        "fifty_two_week": {
+          "low": 151.61,
+          "high": 242.52
+        },
+        "moving_averages": {
+          "fifty_day": 191.0998,
+          "two_hundred_day": 200.57965
+        },
+        "volume": {
+          "current": 32914337,
+          "average": 51704831
+        }
+      },
+      "status": "success"
+    }
+  },
+  "performance_metrics": {
+    "sequential_time": 5.386935710906982,
+    "concurrent_time": 0.9533798694610596,
+    "speedup": 5.650356047429644,
+    "success_rate": 0.5
+  },
+  "summary": {
+    "api_tested": "Yahoo Finance (Integrata)",
+    "symbols_tested": [
+      "AAPL",
+      "TSLA",
+      "MSFT",
+      "GOOGL",
+      "AMZN"
+    ],
+    "successful_symbols": 5,
+    "total_test_time": "1748078121.49s"
+  }
+}

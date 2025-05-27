@@ -1,0 +1,600 @@
+
+> investpro-commercial@1.0.0 build
+> rm -rf node_modules/.vite-temp && tsc -b && vite build
+
+src/App.simple.tsx:7:8 - error TS2613: Module '"/workspace/investpro-commercial/src/components/ai/AIInsights"' has no default export. Did you mean to use 'import { AIInsights } from "/workspace/investpro-commercial/src/components/ai/AIInsights"' instead?
+
+7 import AIInsights from './components/ai/AIInsights';
+         ~~~~~~~~~~
+
+src/App.tsx:10:10 - error TS2614: Module '"./components/affiliate/AffiliateDashboard"' has no exported member 'AffiliateDashboard'. Did you mean to use 'import AffiliateDashboard from "./components/affiliate/AffiliateDashboard"' instead?
+
+10 import { AffiliateDashboard } from './components/affiliate/AffiliateDashboard';
+            ~~~~~~~~~~~~~~~~~~
+
+src/App.tsx:11:10 - error TS2614: Module '"./components/affiliate/BrokersPage"' has no exported member 'BrokersPage'. Did you mean to use 'import BrokersPage from "./components/affiliate/BrokersPage"' instead?
+
+11 import { BrokersPage } from './components/affiliate/BrokersPage';
+            ~~~~~~~~~~~
+
+src/components/admin/AdminDashboard.tsx:19:10 - error TS2614: Module '"./UserManagement"' has no exported member 'UserManagement'. Did you mean to use 'import UserManagement from "./UserManagement"' instead?
+
+19 import { UserManagement } from './UserManagement';
+            ~~~~~~~~~~~~~~
+
+src/components/admin/AdminDashboard.tsx:20:10 - error TS2614: Module '"./SubscriptionManagement"' has no exported member 'SubscriptionManagement'. Did you mean to use 'import SubscriptionManagement from "./SubscriptionManagement"' instead?
+
+20 import { SubscriptionManagement } from './SubscriptionManagement';
+            ~~~~~~~~~~~~~~~~~~~~~~
+
+src/components/admin/AdminDashboard.tsx:21:10 - error TS2614: Module '"./AffiliateManagement"' has no exported member 'AffiliateManagement'. Did you mean to use 'import AffiliateManagement from "./AffiliateManagement"' instead?
+
+21 import { AffiliateManagement } from './AffiliateManagement';
+            ~~~~~~~~~~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:131:7 - error TS2552: Cannot find name 'error'. Did you mean 'Error'?
+
+131   if (error === 'upgrade_required') {
+          ~~~~~
+
+  node_modules/.pnpm/typescript@5.6.3/node_modules/typescript/lib/lib.es5.d.ts:1087:13
+    1087 declare var Error: ErrorConstructor;
+                     ~~~~~
+    'Error' is declared here.
+
+src/components/ai/AIInsights.tsx:152:16 - error TS2304: Cannot find name 't'.
+
+152               {t('ai.premiumFeature')}
+                   ~
+
+src/components/ai/AIInsights.tsx:156:16 - error TS2304: Cannot find name 't'.
+
+156               {t('ai.upgradeMessage', { plan: 'Premium' })}
+                   ~
+
+src/components/ai/AIInsights.tsx:160:24 - error TS2304: Cannot find name 'openUpgradePlanModal'.
+
+160               onClick={openUpgradePlanModal}
+                           ~~~~~~~~~~~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:163:16 - error TS2304: Cannot find name 't'.
+
+163               {t('ai.upgradeNow')}
+                   ~
+
+src/components/ai/AIInsights.tsx:167:16 - error TS2304: Cannot find name 't'.
+
+167               {t('ai.currentPlan')}: <span className="font-medium">{currentPlan.charAt(0).toUpperCase() + currentPlan.slice(1)}</span>
+                   ~
+
+src/components/ai/AIInsights.tsx:167:69 - error TS2304: Cannot find name 'currentPlan'.
+
+167               {t('ai.currentPlan')}: <span className="font-medium">{currentPlan.charAt(0).toUpperCase() + currentPlan.slice(1)}</span>
+                                                                        ~~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:167:107 - error TS2304: Cannot find name 'currentPlan'.
+
+167               {t('ai.currentPlan')}: <span className="font-medium">{currentPlan.charAt(0).toUpperCase() + currentPlan.slice(1)}</span>
+                                                                                                              ~~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:176:7 - error TS2552: Cannot find name 'isLoading'. Did you mean 'loading'?
+
+176   if (isLoading) {
+          ~~~~~~~~~
+
+  src/components/ai/AIInsights.tsx:61:10
+    61   const [loading, setLoading] = useState(true);
+                ~~~~~~~
+    'loading' is declared here.
+
+src/components/ai/AIInsights.tsx:189:10 - error TS2304: Cannot find name 't'.
+
+189         {t('ai.aiInsights')}
+             ~
+
+src/components/ai/AIInsights.tsx:194:25 - error TS2304: Cannot find name 'handleSearch'.
+
+194         <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-4">
+                            ~~~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:197:16 - error TS2304: Cannot find name 't'.
+
+197               {t('ai.tickerSymbol')}
+                   ~
+
+src/components/ai/AIInsights.tsx:204:22 - error TS2304: Cannot find name 'searchSymbol'.
+
+204               value={searchSymbol}
+                         ~~~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:205:32 - error TS2304: Cannot find name 'setSearchSymbol'.
+
+205               onChange={(e) => setSearchSymbol(e.target.value.toUpperCase())}
+                                   ~~~~~~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:211:16 - error TS2304: Cannot find name 't'.
+
+211               {t('ai.predictionTimeframe')}
+                   ~
+
+src/components/ai/AIInsights.tsx:216:22 - error TS2304: Cannot find name 'timeframe'.
+
+216               value={timeframe}
+                         ~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:217:32 - error TS2304: Cannot find name 'setTimeframe'.
+
+217               onChange={(e) => setTimeframe(e.target.value as any)}
+                                   ~~~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:219:35 - error TS2304: Cannot find name 't'.
+
+219               <option value="1d">{t('ai.oneDay')}</option>
+                                      ~
+
+src/components/ai/AIInsights.tsx:220:35 - error TS2304: Cannot find name 't'.
+
+220               <option value="1w">{t('ai.oneWeek')}</option>
+                                      ~
+
+src/components/ai/AIInsights.tsx:221:35 - error TS2304: Cannot find name 't'.
+
+221               <option value="1m">{t('ai.oneMonth')}</option>
+                                      ~
+
+src/components/ai/AIInsights.tsx:222:35 - error TS2304: Cannot find name 't'.
+
+222               <option value="3m">{t('ai.threeMonths')}</option>
+                                      ~
+
+src/components/ai/AIInsights.tsx:231:16 - error TS2304: Cannot find name 't'.
+
+231               {t('ai.analyze')}
+                   ~
+
+src/components/ai/AIInsights.tsx:237:8 - error TS2552: Cannot find name 'error'. Did you mean 'Error'?
+
+237       {error === 'data_error' ? (
+           ~~~~~
+
+  node_modules/.pnpm/typescript@5.6.3/node_modules/typescript/lib/lib.es5.d.ts:1087:13
+    1087 declare var Error: ErrorConstructor;
+                     ~~~~~
+    'Error' is declared here.
+
+src/components/ai/AIInsights.tsx:240:14 - error TS2304: Cannot find name 't'.
+
+240             {t('ai.errorOccurred')}
+                 ~
+
+src/components/ai/AIInsights.tsx:243:14 - error TS2304: Cannot find name 't'.
+
+243             {t('ai.errorMessage')}
+                 ~
+
+src/components/ai/AIInsights.tsx:251:14 - error TS2552: Cannot find name 'prediction'. Did you mean 'predictions'?
+
+251             {prediction && (
+                 ~~~~~~~~~~
+
+  src/components/ai/AIInsights.tsx:56:10
+    56   const [predictions, setPredictions] = useState<Map<string, PredictionResult>>(new Map());
+                ~~~~~~~~~~~
+    'predictions' is declared here.
+
+src/components/ai/AIInsights.tsx:255:22 - error TS2304: Cannot find name 't'.
+
+255                     {t('ai.pricePrediction')}
+                         ~
+
+src/components/ai/AIInsights.tsx:262:25 - error TS2304: Cannot find name 'prediction'.
+
+262                       ${prediction.predictedPrice.toFixed(2)}
+                            ~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:264:70 - error TS2304: Cannot find name 'prediction'.
+
+264                     <div className={`text-lg font-medium ${getColor((prediction.predictedPrice - prediction.currentPrice) / prediction.currentPrice * 100)}`}>
+                                                                         ~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:264:98 - error TS2304: Cannot find name 'prediction'.
+
+264                     <div className={`text-lg font-medium ${getColor((prediction.predictedPrice - prediction.currentPrice) / prediction.currentPrice * 100)}`}>
+                                                                                                     ~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:264:125 - error TS2304: Cannot find name 'prediction'.
+
+264                     <div className={`text-lg font-medium ${getColor((prediction.predictedPrice - prediction.currentPrice) / prediction.currentPrice * 100)}`}>
+                                                                                                                                ~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:265:42 - error TS2304: Cannot find name 'prediction'.
+
+265                       {formatPercentage((prediction.predictedPrice - prediction.currentPrice) / prediction.currentPrice * 100)}
+                                             ~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:265:70 - error TS2304: Cannot find name 'prediction'.
+
+265                       {formatPercentage((prediction.predictedPrice - prediction.currentPrice) / prediction.currentPrice * 100)}
+                                                                         ~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:265:97 - error TS2304: Cannot find name 'prediction'.
+
+265                       {formatPercentage((prediction.predictedPrice - prediction.currentPrice) / prediction.currentPrice * 100)}
+                                                                                                    ~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:268:24 - error TS2304: Cannot find name 't'.
+
+268                       {t('ai.confidenceLevel')}: {(prediction.confidence * 100).toFixed(0)}%
+                           ~
+
+src/components/ai/AIInsights.tsx:268:52 - error TS2304: Cannot find name 'prediction'.
+
+268                       {t('ai.confidenceLevel')}: {(prediction.confidence * 100).toFixed(0)}%
+                                                       ~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:275:26 - error TS2304: Cannot find name 't'.
+
+275                         {t('ai.currentPrice')}
+                             ~
+
+src/components/ai/AIInsights.tsx:278:27 - error TS2304: Cannot find name 'prediction'.
+
+278                         ${prediction.currentPrice.toFixed(2)}
+                              ~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:283:26 - error TS2304: Cannot find name 't'.
+
+283                         {t('ai.predictedPrice')}
+                             ~
+
+src/components/ai/AIInsights.tsx:286:27 - error TS2304: Cannot find name 'prediction'.
+
+286                         ${prediction.predictedPrice.toFixed(2)}
+                              ~~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:291:26 - error TS2304: Cannot find name 't'.
+
+291                         {t('ai.timeframe')}
+                             ~
+
+src/components/ai/AIInsights.tsx:294:26 - error TS2304: Cannot find name 'timeframe'.
+
+294                         {timeframe === '1d' && t('ai.oneDay')}
+                             ~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:294:48 - error TS2304: Cannot find name 't'.
+
+294                         {timeframe === '1d' && t('ai.oneDay')}
+                                                   ~
+
+src/components/ai/AIInsights.tsx:295:26 - error TS2304: Cannot find name 'timeframe'.
+
+295                         {timeframe === '1w' && t('ai.oneWeek')}
+                             ~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:295:48 - error TS2304: Cannot find name 't'.
+
+295                         {timeframe === '1w' && t('ai.oneWeek')}
+                                                   ~
+
+src/components/ai/AIInsights.tsx:296:26 - error TS2304: Cannot find name 'timeframe'.
+
+296                         {timeframe === '1m' && t('ai.oneMonth')}
+                             ~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:296:48 - error TS2304: Cannot find name 't'.
+
+296                         {timeframe === '1m' && t('ai.oneMonth')}
+                                                   ~
+
+src/components/ai/AIInsights.tsx:297:26 - error TS2304: Cannot find name 'timeframe'.
+
+297                         {timeframe === '3m' && t('ai.threeMonths')}
+                             ~~~~~~~~~
+
+src/components/ai/AIInsights.tsx:297:48 - error TS2304: Cannot find name 't'.
+
+297                         {timeframe === '3m' && t('ai.threeMonths')}
+                                                   ~
+
+src/components/ai/AIInsights.tsx:310:22 - error TS2304: Cannot find name 't'.
+
+310                     {t('ai.sentimentAnalysis')}
+                         ~
+
+src/components/ai/AIInsights.tsx:320:60 - error TS2339: Property 'score' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+320                             style={{ width: `${((sentiment.score + 1) / 2 * 100).toFixed(0)}%` }}
+                                                               ~~~~~
+
+src/components/ai/AIInsights.tsx:322:41 - error TS2339: Property 'score' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+322                               sentiment.score > 0.3
+                                            ~~~~~
+
+src/components/ai/AIInsights.tsx:324:45 - error TS2339: Property 'score' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+324                                 : sentiment.score < -0.3
+                                                ~~~~~
+
+src/components/ai/AIInsights.tsx:334:34 - error TS2339: Property 'score' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+334                       {sentiment.score > 0.3 && t('ai.bullish')}
+                                     ~~~~~
+
+src/components/ai/AIInsights.tsx:334:49 - error TS2304: Cannot find name 't'.
+
+334                       {sentiment.score > 0.3 && t('ai.bullish')}
+                                                    ~
+
+src/components/ai/AIInsights.tsx:335:34 - error TS2339: Property 'score' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+335                       {sentiment.score < -0.3 && t('ai.bearish')}
+                                     ~~~~~
+
+src/components/ai/AIInsights.tsx:335:50 - error TS2304: Cannot find name 't'.
+
+335                       {sentiment.score < -0.3 && t('ai.bearish')}
+                                                     ~
+
+src/components/ai/AIInsights.tsx:336:34 - error TS2339: Property 'score' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+336                       {sentiment.score >= -0.3 && sentiment.score <= 0.3 && t('ai.neutral')}
+                                     ~~~~~
+
+src/components/ai/AIInsights.tsx:336:61 - error TS2339: Property 'score' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+336                       {sentiment.score >= -0.3 && sentiment.score <= 0.3 && t('ai.neutral')}
+                                                                ~~~~~
+
+src/components/ai/AIInsights.tsx:336:77 - error TS2304: Cannot find name 't'.
+
+336                       {sentiment.score >= -0.3 && sentiment.score <= 0.3 && t('ai.neutral')}
+                                                                                ~
+
+src/components/ai/AIInsights.tsx:339:24 - error TS2304: Cannot find name 't'.
+
+339                       {t('ai.sentimentScore')}: {((sentiment.score + 1) / 2 * 100).toFixed(0)}%
+                           ~
+
+src/components/ai/AIInsights.tsx:339:62 - error TS2339: Property 'score' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+339                       {t('ai.sentimentScore')}: {((sentiment.score + 1) / 2 * 100).toFixed(0)}%
+                                                                 ~~~~~
+
+src/components/ai/AIInsights.tsx:346:26 - error TS2304: Cannot find name 't'.
+
+346                         {t('ai.newsSentiment')}
+                             ~
+
+src/components/ai/AIInsights.tsx:350:58 - error TS2339: Property 'sources' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+350                           className={`h-full ${sentiment.sources.news > 0 ? 'bg-green-500' : 'bg-red-500'}`}
+                                                             ~~~~~~~
+
+src/components/ai/AIInsights.tsx:351:65 - error TS2339: Property 'sources' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+351                           style={{ width: `${Math.abs(sentiment.sources.news) * 100}%` }}
+                                                                    ~~~~~~~
+
+src/components/ai/AIInsights.tsx:357:26 - error TS2304: Cannot find name 't'.
+
+357                         {t('ai.socialSentiment')}
+                             ~
+
+src/components/ai/AIInsights.tsx:361:58 - error TS2339: Property 'sources' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+361                           className={`h-full ${sentiment.sources.social > 0 ? 'bg-green-500' : 'bg-red-500'}`}
+                                                             ~~~~~~~
+
+src/components/ai/AIInsights.tsx:362:65 - error TS2339: Property 'sources' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+362                           style={{ width: `${Math.abs(sentiment.sources.social) * 100}%` }}
+                                                                    ~~~~~~~
+
+src/components/ai/AIInsights.tsx:368:26 - error TS2304: Cannot find name 't'.
+
+368                         {t('ai.analystSentiment')}
+                             ~
+
+src/components/ai/AIInsights.tsx:372:58 - error TS2339: Property 'sources' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+372                           className={`h-full ${sentiment.sources.analyst > 0 ? 'bg-green-500' : 'bg-red-500'}`}
+                                                             ~~~~~~~
+
+src/components/ai/AIInsights.tsx:373:65 - error TS2339: Property 'sources' does not exist on type 'Map<string, SentimentAnalysis>'.
+
+373                           style={{ width: `${Math.abs(sentiment.sources.analyst) * 100}%` }}
+                                                                    ~~~~~~~
+
+src/components/ai/AIInsights.tsx:383:14 - error TS2304: Cannot find name 'risk'.
+
+383             {risk && (
+                 ~~~~
+
+src/components/ai/AIInsights.tsx:387:22 - error TS2304: Cannot find name 't'.
+
+387                     {t('ai.riskAnalysis')}
+                         ~
+
+src/components/ai/AIInsights.tsx:408:33 - error TS2304: Cannot find name 'risk'.
+
+408                         stroke={risk.score > 75 ? '#ef4444' : risk.score > 50 ? '#f59e0b' : risk.score > 25 ? '#3b82f6' : '#10b981'}
+                                    ~~~~
+
+src/components/ai/AIInsights.tsx:408:63 - error TS2304: Cannot find name 'risk'.
+
+408                         stroke={risk.score > 75 ? '#ef4444' : risk.score > 50 ? '#f59e0b' : risk.score > 25 ? '#3b82f6' : '#10b981'}
+                                                                  ~~~~
+
+src/components/ai/AIInsights.tsx:408:93 - error TS2304: Cannot find name 'risk'.
+
+408                         stroke={risk.score > 75 ? '#ef4444' : risk.score > 50 ? '#f59e0b' : risk.score > 25 ? '#3b82f6' : '#10b981'}
+                                                                                                ~~~~
+
+src/components/ai/AIInsights.tsx:410:45 - error TS2304: Cannot find name 'risk'.
+
+410                         strokeDasharray={`${risk.score}, 100`}
+                                                ~~~~
+
+src/components/ai/AIInsights.tsx:414:26 - error TS2304: Cannot find name 'risk'.
+
+414                         {risk.score.toFixed(0)}
+                             ~~~~
+
+src/components/ai/AIInsights.tsx:419:24 - error TS2304: Cannot find name 'risk'.
+
+419                       {risk.score > 75 && t('ai.veryHighRisk')}
+                           ~~~~
+
+src/components/ai/AIInsights.tsx:419:43 - error TS2304: Cannot find name 't'.
+
+419                       {risk.score > 75 && t('ai.veryHighRisk')}
+                                              ~
+
+src/components/ai/AIInsights.tsx:420:24 - error TS2304: Cannot find name 'risk'.
+
+420                       {risk.score > 50 && risk.score <= 75 && t('ai.highRisk')}
+                           ~~~~
+
+src/components/ai/AIInsights.tsx:420:43 - error TS2304: Cannot find name 'risk'.
+
+420                       {risk.score > 50 && risk.score <= 75 && t('ai.highRisk')}
+                                              ~~~~
+
+src/components/ai/AIInsights.tsx:420:63 - error TS2304: Cannot find name 't'.
+
+420                       {risk.score > 50 && risk.score <= 75 && t('ai.highRisk')}
+                                                                  ~
+
+src/components/ai/AIInsights.tsx:421:24 - error TS2304: Cannot find name 'risk'.
+
+421                       {risk.score > 25 && risk.score <= 50 && t('ai.moderateRisk')}
+                           ~~~~
+
+src/components/ai/AIInsights.tsx:421:43 - error TS2304: Cannot find name 'risk'.
+
+421                       {risk.score > 25 && risk.score <= 50 && t('ai.moderateRisk')}
+                                              ~~~~
+
+src/components/ai/AIInsights.tsx:421:63 - error TS2304: Cannot find name 't'.
+
+421                       {risk.score > 25 && risk.score <= 50 && t('ai.moderateRisk')}
+                                                                  ~
+
+src/components/ai/AIInsights.tsx:422:24 - error TS2304: Cannot find name 'risk'.
+
+422                       {risk.score <= 25 && t('ai.lowRisk')}
+                           ~~~~
+
+src/components/ai/AIInsights.tsx:422:44 - error TS2304: Cannot find name 't'.
+
+422                       {risk.score <= 25 && t('ai.lowRisk')}
+                                               ~
+
+src/components/ai/AIInsights.tsx:429:26 - error TS2304: Cannot find name 't'.
+
+429                         {t('ai.volatility')}
+                             ~
+
+src/components/ai/AIInsights.tsx:432:26 - error TS2304: Cannot find name 'risk'.
+
+432                         {risk.volatility.toFixed(0)}/100
+                             ~~~~
+
+src/components/ai/AIInsights.tsx:437:26 - error TS2304: Cannot find name 't'.
+
+437                         {t('ai.marketRisk')}
+                             ~
+
+src/components/ai/AIInsights.tsx:440:26 - error TS2304: Cannot find name 'risk'.
+
+440                         {risk.marketRisk.toFixed(0)}/100
+                             ~~~~
+
+src/components/ai/AIInsights.tsx:445:26 - error TS2304: Cannot find name 't'.
+
+445                         {t('ai.companyRisk')}
+                             ~
+
+src/components/ai/AIInsights.tsx:448:26 - error TS2304: Cannot find name 'risk'.
+
+448                         {risk.companyRisk.toFixed(0)}/100
+                             ~~~~
+
+src/components/ai/AIInsights.tsx:460:16 - error TS2304: Cannot find name 't'.
+
+460               {t('ai.howItWorks')}
+                   ~
+
+src/components/ai/AIInsights.tsx:463:16 - error TS2304: Cannot find name 't'.
+
+463               {t('ai.methodologyDescription')}
+                   ~
+
+src/components/ai/AIInsights.tsx:468:20 - error TS2304: Cannot find name 't'.
+
+468                   {t('ai.pricePrediction')}
+                       ~
+
+src/components/ai/AIInsights.tsx:471:20 - error TS2304: Cannot find name 't'.
+
+471                   {t('ai.pricePredictionDescription')}
+                       ~
+
+src/components/ai/AIInsights.tsx:476:20 - error TS2304: Cannot find name 't'.
+
+476                   {t('ai.sentimentAnalysis')}
+                       ~
+
+src/components/ai/AIInsights.tsx:479:20 - error TS2304: Cannot find name 't'.
+
+479                   {t('ai.sentimentAnalysisDescription')}
+                       ~
+
+src/components/ai/AIInsights.tsx:484:20 - error TS2304: Cannot find name 't'.
+
+484                   {t('ai.riskAnalysis')}
+                       ~
+
+src/components/ai/AIInsights.tsx:487:20 - error TS2304: Cannot find name 't'.
+
+487                   {t('ai.riskAnalysisDescription')}
+                       ~
+
+src/components/ai/AIInsights.tsx:492:16 - error TS2304: Cannot find name 't'.
+
+492               {t('ai.disclaimer')}
+                   ~
+
+src/components/billing/BillingDashboard.tsx:270:21 - error TS2322: Type '{ children: string; variant: "outline"; onClick: () => Promise<void>; loading: boolean; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+  Property 'loading' does not exist on type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+
+270                     loading={actionLoading === 'cancel'}
+                        ~~~~~~~
+
+src/components/billing/BillingDashboard.tsx:279:21 - error TS2322: Type '{ children: string; onClick: () => Promise<void>; loading: boolean; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+  Property 'loading' does not exist on type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+
+279                     loading={actionLoading === 'resume'}
+                        ~~~~~~~
+
+src/components/billing/BillingDashboard.tsx:288:19 - error TS2322: Type '{ children: (string | Element)[]; variant: "outline"; onClick: () => Promise<void>; loading: boolean; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+  Property 'loading' does not exist on type 'IntrinsicAttributes & ButtonProps & RefAttributes<HTMLButtonElement>'.
+
+288                   loading={actionLoading === 'payment'}
+                      ~~~~~~~
+
+src/config/affiliates.ts:243:62 - error TS2345: Argument of type 'string' is not assignable to parameter of type 'never'.
+
+243   return BROKER_PARTNERS.filter(broker => brokerIds.includes(broker.id));
+                                                                 ~~~~~~~~~
+
+src/services/ai.ts:1:21 - error TS2307: Cannot find module '@tensorflow/tfjs' or its corresponding type declarations.
+
+1 import * as tf from '@tensorflow/tfjs';
+                      ~~~~~~~~~~~~~~~~~~
+
+
+Found 114 errors.
+
