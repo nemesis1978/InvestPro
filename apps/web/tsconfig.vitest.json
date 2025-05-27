@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "jsdom", "vitest/globals"],
+    "composite": true
+  },
+  "include": [
+    "src",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "vitest.config.ts"
+  ]
+}
